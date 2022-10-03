@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+</head>
+<body>
+    <h1 id="title">Random Numbers</h1>
+    <script>
+        console.log(create_random_string(6));
+
+        function create_random_string(string_length){
+            var random_string = '';
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz'
+            for (var i = 0; i < string_length; i++) {
+                random_string += characters.charAt(Math.floor(Math.random() * characters.length))
+            }
+            return random_string
+        }
+    </script>
+</body>
+</html>
